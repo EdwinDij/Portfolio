@@ -2,7 +2,6 @@ import React from 'react';
 import './Styles/Main.scss'
 import Navbar from '../Header/NavbarHeader'
 import Typewriter from 'typewriter-effect';
-import { type } from '@testing-library/user-event/dist/type';
 
 function Main() {
 
@@ -25,6 +24,11 @@ function Main() {
                     .pauseFor(2000)
                     .deleteAll()
                     typewriter.typeString("Je suis passioné par la tech, l'informatique et les jeux vidéos")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    typewriter.typeString("J'aime apprendre et découvrir de nouvelle chose")
+                    .pauseFor(2000)
+                    .deleteAll()
                     .start()
                 }}
                 />
