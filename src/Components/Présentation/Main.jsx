@@ -8,7 +8,7 @@ function Main() {
     return (<div>
         <Navbar />
         <div className="presentation">
-            <h1 class="helloWorld">
+            <h1 className="helloWorld">
                 Hello World
             </h1>
             <h2 className='me'>

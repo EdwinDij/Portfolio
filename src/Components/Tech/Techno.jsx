@@ -13,16 +13,16 @@ export default function Techno() {
         </h2>
         <div className='techno'>
             <div className='techno-card'>
-                <img src={html} />
+                <img src={html} alt="html" />
             </div>
             <div className='techno-card'>
-                <img src={css} />
+                <img src={css} alt="css" />
             </div>
             <div className='techno-card'>
-                <img src={js} />
+                <img src={js}alt="js" />
             </div>
             <div className='techno-card'>
-                <img src={react} /> 
+                <img src={react} alt="react" /> 
             </div>
         </div>
         </div>
