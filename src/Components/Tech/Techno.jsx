@@ -7,7 +7,7 @@ import html from "../assets/html5.png"
 
 
 export default function Techno() {
-    return (<div>
+    return (<div className='stack'>
         <h2 className='title-section' id='technologie'>
             Technologies
         </h2>

@@ -6,8 +6,8 @@ function NavbarHeader () {
     return (
        <div className="header">
             <span>Home</span>
-            <span>Technologie</span>
-            <span>Projets</span>
+            <a href="#technologie">Technologie</a>
+            <a href="#projets">Projets</a>
             <a href= "mailto:edwin.d899@hmail.com">Contact</a>
        </div>
     )
