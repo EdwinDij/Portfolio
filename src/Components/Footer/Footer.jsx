@@ -17,7 +17,7 @@ export default function Footer() {
                     </a>
                 </li>
                 <li>
-                  <a href= 'https://www.linkedin.com/in/edwin-dije-ont-a0a9b917b/'> 
+                  <a href= 'https://linkedin.com/in/edwin-dijeont-1469a0226'> 
                   <i class="fa-brands fa-linkedin"></i>
                   </a>
                 </li>
