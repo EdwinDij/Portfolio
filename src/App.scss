@@ -1,12 +1,1 @@
 
-.title-section {
-    color: white;
-    &::after {
-        content: "";
-        height: 0.4rem;
-        width: 2.8rem;
-        background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
-        display: block;
-        border-radius: 1rem; 
-    }
-}
