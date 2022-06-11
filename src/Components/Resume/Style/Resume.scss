@@ -1,0 +1,24 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353434;
+    color: azure;
+    align-items: baseline;
+    height: 4rem;
+    position: static;
+}
+
+.container {
+    background-color: #35343431;
+}
+.sub-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    height: 100%;
+}
+.left-content {
+    flex: 1;
+}
+

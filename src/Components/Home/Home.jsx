@@ -1,5 +1,7 @@
 import React from 'react'
+import Nav from './Nav'
 import Typewriter from 'typewriter-effect'
+import {Link} from 'react-router-dom'
 import './Style/Home.scss'
 export default function Home() {
 
@@ -8,6 +10,7 @@ export default function Home() {
 
             <div className="me-content">
             <h1 className='name'>
+                Bonjour je suis <br></br>
                 Edwin Dijeont
             </h1>
             <h2 className="me">
@@ -28,12 +31,7 @@ export default function Home() {
                 />
             </h2>
             </div>
-            <nav className="navLink">
-                <p className='link'>Home</p>
-                <p className='link'>CV</p>
-                <p className='link'>Projets</p>
-                <p className='link'>Contact</p>
-            </nav>
+            <Nav />
             <div className="social">
                 <a className='social-link' href= "https://github.com/EdwinDij">
                 <i class="fa-brands fa-github"></i>

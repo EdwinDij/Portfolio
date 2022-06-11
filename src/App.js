@@ -1,10 +1,21 @@
 import './App.scss';
 import Home from './Components/Home/Home';
-import {Routes, Route, Router} from 'react-router-dom';
+import Resume from './Components/Resume/Resume';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+}
+  from 'react-router-dom';
 
 function App() {
   return (<div>
-    <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Resume" element={<Resume/>} />
+      </Routes>
+    </BrowserRouter>
   </div>
 
   )
