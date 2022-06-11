@@ -1,0 +1,16 @@
+.project-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #dd5656;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c44444;
+}

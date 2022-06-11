@@ -1,7 +1,6 @@
 import React from 'react'
 import './Style/Resume.scss'
-import { Link } from 'react-router-dom'
-import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
+//import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
 import Nav from '../Home/Nav'
 export default function Resume() {
   return (
@@ -11,12 +10,13 @@ export default function Resume() {
         <Nav />
       </nav>
       <div className='container'>
-          <h3 className='job'>Développeur Web Junior</h3>
+        
+          <h2 className='job'>Développeur Web Junior</h2>
           <div className="sub-container">
           <div className="left-content">
-            <h4 className='title-zone'>
+            <h3 className='title-zone'>
               Infos personelle
-            </h4>
+            </h3>
             <p className='info-content'>
               Je suis un développeur web junior passionné par le développement web et l'apprentissage de nouvelles technologies. <br></br>
               Je suis un étudiant chez OpenClassRooms à la recherche d'une alternance en Bac+3 Python.
@@ -36,7 +36,7 @@ export default function Resume() {
                 </li>
               </ul>
             </p>
-            <h4 className='education'>Formations</h4>
+            <h3 className='education'>Formations</h3>
             <p className='education-content'>
               <ul className='education-list' >
                 <li className='education-item'>
@@ -73,9 +73,9 @@ export default function Resume() {
             </p>
               </div>
             <div className="right-content">
-              <h4 className='title-zone'>
+              <h3 className='title-zone'>
                 Expériences Professionnelles
-              </h4>
+              </h3>
 
               <ul className='experience-list'>
                 <li className='experience-item'>

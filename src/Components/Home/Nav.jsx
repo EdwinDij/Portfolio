@@ -5,7 +5,7 @@ export default function Nav() {
         <div className='navLink'> 
             <Link to="/" className='link'>Home</Link>
             <Link to="/Resume" className='link'>CV</Link>
-            <p className='link'>Projets</p>
+            <Link to="/Projects" className='link'>Projets</Link>
             <p className='link'>Contact</p>
         </div>
     )

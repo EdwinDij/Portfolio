@@ -10,8 +10,8 @@ export default function Home() {
 
             <div className="me-content">
             <h1 className='name'>
-                Bonjour je suis <br></br>
-                Edwin Dijeont
+                Bonjour,<br></br> 
+                je suis Edwin Dijeont
             </h1>
             <h2 className="me">
                 Je suis un développeur web junior passionné par <Typewriter
@@ -33,13 +33,13 @@ export default function Home() {
             </div>
             <Nav />
             <div className="social">
-                <a className='social-link' href= "https://github.com/EdwinDij">
+                <a className='social-link' href= "https://github.com/EdwinDij" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>
                 </a>
-                <a className='social-link' href="https://twitter.com/Edwindijeont">
+                <a className='social-link' href="https://twitter.com/Edwindijeont" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a className='social-link' href="linkedin.com/in/edwin-dijeont-1469a0226">
+                <a className='social-link' href="linkedin.com/in/edwin-dijeont-1469a0226" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
