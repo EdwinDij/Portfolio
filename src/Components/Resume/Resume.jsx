@@ -1,6 +1,7 @@
 import React from 'react'
 import './Style/Resume.scss'
 //import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
+import NavbarLeft from '../NavbarLeft/NavbarLeft'
 import Nav from '../Home/Nav'
 export default function Resume() {
   return (
@@ -117,7 +118,9 @@ export default function Resume() {
               </ul>
           </div>
         </div>
+        <NavbarLeft />
         </div>
+
     </div>
   )
 }
