@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
 import Typewriter from 'typewriter-effect'
-import {Link} from 'react-router-dom'
 import './Style/Home.scss'
 export default function Home() {
 
@@ -39,7 +38,7 @@ export default function Home() {
                 <a className='social-link' href="https://twitter.com/Edwindijeont" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a className='social-link' href="linkedin.com/in/edwin-dijeont-1469a0226" target="_blank" rel="noopener noreferrer">
+                <a className='social-link' href="https://www.linkedin.com/in/edwin-dijeont-1469a0226" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>

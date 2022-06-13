@@ -1,3 +1,5 @@
+@import '../../../colors.scss';
+
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -9,10 +11,94 @@
 
 .sub-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem;
-    align-content: center;
+    padding: 2rem 4rem;
+    background-color: $tertiary-color;
+    border-radius: 0.5rem;
+}
+
+.personnal-info {
+    width: 60%;
+    padding-left: 3rem;
+}
+
+.life-zone {
+    padding-left: 3rem;
+}
+
+.title-zone{
+    z-index: 0;
+    position: relative;
+}
+
+.title-zone::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    top: 7px;
+    left: -5px;
+}
+
+//info perso
+.line-1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 159px;
+    background-color: $secondary-color;
+    left:2px;
 }
 
 
+//formation
+.line-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 431px;
+    background-color: $secondary-color;
+    left:2px;
+}
+
+
+//experience
+.line-3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 408px;
+    background-color: $secondary-color;
+    left: 2px;
+}
+
+.education {
+    padding-left: 3rem ;
+}
+
+.experience-subtitle {
+    margin-top: 0;
+}
+
+.life-zone h4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 3px;
+    border-radius: 1rem;
+    background-color: $quinary-color;
+    background: linear-gradient(90deg, rgba(41,50,65,1) 12%, rgba(152,193,217,1) 53%, rgba(238,108,77,1) 72%);
+}
+
+.fa-solid {
+    color: $quaternary-color;
+    margin-right: 0.5rem;
+}
