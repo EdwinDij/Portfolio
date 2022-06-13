@@ -1,10 +1,14 @@
 import React from 'react'
 import Nav from "../Home/Nav"
 import './Style/Contact.scss'
-
+import {motion} from 'framer-motion'
 export default function Contact() {
   return (
-    <div className='contact'>
+    <motion.div className='contact'
+    intial={{ width:0}}
+    animate={{ width:"100%"}}
+    exit={{ x: window.innerWidth,transition: {duration: 0.5}}}
+    >
       <nav className='navBar'>
         <h1 className='name'> Edwin</h1>
         <Nav />
@@ -19,7 +23,7 @@ export default function Contact() {
           </form>
 
         </div>
-    </div>
+    </motion.div>
 
   )
 }

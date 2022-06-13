@@ -2,9 +2,14 @@ import React from 'react';
 import './Style/Projects.scss';
 import Nav from '../Home/Nav';
 import NavbarLeft from '../NavbarLeft/NavbarLeft';
+import {motion} from 'framer-motion';
 export default function Projects() {
   return (
-    <div className='content-projects'>
+    <motion.div className='content-projects'
+    intial={{ width:0}}
+    animate={{ width:"100%"}}
+    exit={{ x: window.innerWidth,transition: {duration: 0.5}}}
+    >
       <nav className='navBar'>
         <h1 className='name'> Edwin</h1>
         <Nav />
@@ -69,6 +74,6 @@ export default function Projects() {
         </div>
         <NavbarLeft />
       </div>
-      </div>
+      </motion.div>
       )
 }

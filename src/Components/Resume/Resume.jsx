@@ -3,9 +3,14 @@ import './Style/Resume.scss'
 //import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
 import NavbarLeft from '../NavbarLeft/NavbarLeft'
 import Nav from '../Home/Nav'
+import {motion} from 'framer-motion'
 export default function Resume() {
   return (
-    <div className='Resume'>
+    <motion.div className='Resume'
+    intial={{ width:0}}
+    animate={{ width:"100%"}}
+    exit={{ x: window.innerWidth,transition: {duration: 0.3}}}
+    >
       <nav className='navBar'>
         <h1 className='name'> Edwin</h1>
         <Nav />
@@ -126,6 +131,6 @@ export default function Resume() {
         <NavbarLeft />
       </div>
 
-    </div>
+    </motion.div>
   )
 }
