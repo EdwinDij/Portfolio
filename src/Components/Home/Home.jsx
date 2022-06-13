@@ -8,13 +8,13 @@ export default function Home() {
     
     return (
         <motion.div className='home'
-        intial={{ height: 1}}
-        animate={{ height: "100vh" }}
+        intial={{ y: "-100vw" }}
+        animate={{ y: 0 }}
         exit={{ height: 0, transition: {duration: 0.5}}}
         >
         <motion.div className='home-without-bg'
-        initial={{ opacity: 0}}
-        animate={{ opacity: 1}}
+        initial={{ y: "-100vw" }}
+        animate={{ y: 0 }}
         exit={{ opacity: 0, transition: {duration: 0.2}}}
         >
             <div className="me-content">

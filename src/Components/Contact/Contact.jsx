@@ -4,15 +4,14 @@ import './Style/Contact.scss'
 import {motion} from 'framer-motion'
 export default function Contact() {
   return (
-    <motion.div className='contact'
-    intial={{ width:0}}
-    animate={{ width:"100%"}}
-    exit={{ x: window.innerWidth,transition: {duration: 0.5}}}
-    >
-      <nav className='navBar'>
+    <div className='contact'>
+      <motion.nav className='navBar'
+          initial={{height: "100vw",}}
+          animate={{ height: "4rem" , transition: {duration: 1}}}
+          exit={{height: "100vw", transition: {duration: 0.5}}}>
         <h1 className='name'> Edwin</h1>
         <Nav />
-      </nav>
+      </motion.nav>
         <div className="container container-form">
           <form className="form">
             <input type="text" placeholder="Nom" className="input" />
@@ -23,7 +22,7 @@ export default function Contact() {
           </form>
 
         </div>
-    </motion.div>
+    </div>
 
   )
 }

@@ -3,21 +3,23 @@ import './Style/Resume.scss'
 //import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
 import NavbarLeft from '../NavbarLeft/NavbarLeft'
 import Nav from '../Home/Nav'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+
 export default function Resume() {
   return (
-    <motion.div className='Resume'
-    intial={{ width:0}}
-    animate={{ width:"100%"}}
-    exit={{ x: window.innerWidth,transition: {duration: 0.3}}}
-    >
-      <nav className='navBar'>
+    <div className='Resume'>
+      <motion.nav className='navBar'
+      initial={{height: "100vw",}}
+      animate={{ height: "4rem" , transition: {duration: 1}}}
+      exit={{height: "100vw", transition: {duration: 0.5}}}
+      >
         <h1 className='name'> Edwin</h1>
         <Nav />
-      </nav>
+      </motion.nav>
       <div className='container'>
-
-        <h2 className='job'>Développeur Web Junior</h2>
+        <h2 className='job'>
+          Développeur Web Junior
+        </h2>
         <div className="sub-container">
           <div className="left-content">
             <h3 className='title-zone line-1'>
@@ -26,7 +28,7 @@ export default function Resume() {
             <div className="personnal-info">
               <p className='info-content'>
                 Je suis un développeur web junior passionné par le développement web et l'apprentissage de nouvelles technologies. <br></br>
-                Je suis un étudiant chez O    penClassRooms à la recherche d'une alternance en Bac+3 Python.
+                Je suis un étudiant chez OpenClassRooms à la recherche d'une alternance en Bac+3 Python.
                 <ul className='info-contact'>
                   <h4 className='info-contact-item'>
                     <i class="fa-solid fa-mobile-screen"></i>
@@ -48,38 +50,38 @@ export default function Resume() {
               Formations
             </h3>
             <div className="life-zone">
-            <h4 className='education-item'>
-              OpenClassRooms Bac+2 développement web
-            </h4>
-            <p className="education-subtitle">
-              Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS ; <br></br>
-              Animer les pages web avec CSS3 ;<br></br>
-              Appliquer les standards du web et les normes en vigueur ;<br></br>
-              Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette) ;<br></br>
-              Améliorer le référencement naturel en utilisant les balises selon leur sémantique ;<br></br>
-              Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript ;<br></br>
-              Se connecter à un service web pour exploiter des données tierces (API) ;<br></br>
-              Gérer les comptes utilisateurs ;<br></br>
-              Concevoir un site maintenable grâce à la gestion des erreurs et exceptions ;<br></br>
-              Créer, gérer et afficher le contenu d’une base de données.
-            </p>
-            <div className="educatioin"></div>
-            <h4 className='education-item'>
-              Bac professionnel Système Electrique Numérique
-            </h4>
-            <p className="education-subtitle">
-              Installation d'équipements électrodomestiques, d'alarme, ;<br></br>
-              Maintenance d'équipements électrodomestiques;<br></br>
-            </p>
+              <h4 className='education-item'>
+                OpenClassRooms Bac+2 développement web
+              </h4>
+              <p className="education-subtitle">
+                Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS ; <br></br>
+                Animer les pages web avec CSS3 ;<br></br>
+                Appliquer les standards du web et les normes en vigueur ;<br></br>
+                Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette) ;<br></br>
+                Améliorer le référencement naturel en utilisant les balises selon leur sémantique ;<br></br>
+                Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript ;<br></br>
+                Se connecter à un service web pour exploiter des données tierces (API) ;<br></br>
+                Gérer les comptes utilisateurs ;<br></br>
+                Concevoir un site maintenable grâce à la gestion des erreurs et exceptions ;<br></br>
+                Créer, gérer et afficher le contenu d’une base de données.
+              </p>
+              <div className="educatioin"></div>
+              <h4 className='education-item'>
+                Bac professionnel Système Electrique Numérique
+              </h4>
+              <p className="education-subtitle">
+                Installation d'équipements électrodomestiques, d'alarme, ;<br></br>
+                Maintenance d'équipements électrodomestiques;<br></br>
+              </p>
 
-            <h4 className='education-item'>
-              BEP Système Electrique Numérique option: Electrodomestique
-            </h4>
-            <p className="education-subtitle">
-              Installation d'équipements électrodomestiques;<br></br>
-              Maintenance d'équipements électrodomestiques;<br></br>
+              <h4 className='education-item'>
+                BEP Système Electrique Numérique option: Electrodomestique
+              </h4>
+              <p className="education-subtitle">
+                Installation d'équipements électrodomestiques;<br></br>
+                Maintenance d'équipements électrodomestiques;<br></br>
 
-            </p>
+              </p>
             </div>
           </div>
 
@@ -131,6 +133,6 @@ export default function Resume() {
         <NavbarLeft />
       </div>
 
-    </motion.div>
+    </div>
   )
 }

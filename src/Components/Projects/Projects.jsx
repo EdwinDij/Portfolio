@@ -2,18 +2,18 @@ import React from 'react';
 import './Style/Projects.scss';
 import Nav from '../Home/Nav';
 import NavbarLeft from '../NavbarLeft/NavbarLeft';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 export default function Projects() {
   return (
-    <motion.div className='content-projects'
-    intial={{ width:0}}
-    animate={{ width:"100%"}}
-    exit={{ x: window.innerWidth,transition: {duration: 0.5}}}
-    >
-      <nav className='navBar'>
+    <div className='content-projects'>
+      <motion.nav className='navBar'
+      initial={{height: "100vw",}}
+      animate={{ height: "4rem" , transition: {duration: 1}}}
+      exit={{height: "100vw", transition: {duration: 0.5}}}
+      >
         <h1 className='name'> Edwin</h1>
-        <Nav />
-      </nav>
+          <Nav />
+      </motion.nav>
       <div className='container'>
         <h2 className='page-name'>
           Projets
@@ -33,9 +33,9 @@ export default function Projects() {
               <figcaption>
                 <h3>Réservia <span>html-css</span></h3>
               </figcaption>
-              <a href="https://edwindij.github.io/version-avant-29-09-21-EdwinDijeont_2_31102021/"  target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://edwindij.github.io/version-avant-29-09-21-EdwinDijeont_2_31102021/" target="_blank" rel="noopener noreferrer"></a>
             </figure>
-            
+
             <figure class="snip1576" id="html">
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample104.jpg" alt="sample104" />
               <figcaption>
@@ -68,12 +68,12 @@ export default function Projects() {
               <a href="https://github.com/EdwinDij/groupomania" target="_blank" rel="noopener noreferrer"></a>
             </figure>
 
-          
+
 
           </div>
         </div>
         <NavbarLeft />
       </div>
-      </motion.div>
-      )
+    </div>
+  )
 }
