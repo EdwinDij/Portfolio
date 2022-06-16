@@ -9,6 +9,15 @@ a {
   color: inherit;
 }
 
+p {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, sans-serif;
+  font-size: 15px;
+}
+
+a:focus {
+  color: $quaternary-color;
+}
+
 li {
   list-style: none;
 }
@@ -17,6 +26,14 @@ nav {
   background-color: $primary-color;
 }
 
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: baseline;
+  height: 4rem;
+  position: static;
+}
 .container {
   background-color: $secondary-color;
   height: 100vh;
@@ -24,4 +41,33 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.navLink,
+ .title-zone,
+ .experience-item,
+ .education-item,
+ .info-contact{
+  font-family: consolas, monospace;;
+  font-size: 18px;
+}
+.page-name {
+  font-size: 25px;
+  font-family: consolas, monospace;;
+
+}
+
+.navBar {
+  padding: 0 5%;
+}
+@media(max-width:768px) {
+  .name {
+    display: none;
+  }
+
+  .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

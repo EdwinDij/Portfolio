@@ -1,6 +1,6 @@
 import React from 'react'
 import './Style/Resume.scss'
-//import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
+import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
 import NavbarLeft from '../NavbarLeft/NavbarLeft'
 import Nav from '../Home/Nav'
 import { motion } from 'framer-motion'
@@ -9,15 +9,15 @@ export default function Resume() {
   return (
     <div className='Resume'>
       <motion.nav className='navBar'
-      initial={{height: "100vw",}}
-      animate={{ height: "4rem" , transition: {duration: 1}}}
-      exit={{height: "100vw", transition: {duration: 0.5}}}
+        initial={{ height: "100vw", }}
+        animate={{ height: "4rem", transition: { duration: 1 } }}
+        exit={{ height: "100vw", transition: { duration: 0.5 } }}
       >
         <h1 className='name'> Edwin</h1>
         <Nav />
       </motion.nav>
-      <div className='container'>
-        <h2 className='job'>
+      <div className='container resp-container'>
+        <h2 className='page-name'>
           Développeur Web Junior
         </h2>
         <div className="sub-container">
@@ -25,35 +25,49 @@ export default function Resume() {
             <h3 className='title-zone line-1'>
               Infos personelle
             </h3>
-            <div className="personnal-info">
-              <p className='info-content'>
-                Je suis un développeur web junior passionné par le développement web et l'apprentissage de nouvelles technologies. <br></br>
-                Je suis un étudiant chez OpenClassRooms à la recherche d'une alternance en Bac+3 Python.
-                <ul className='info-contact'>
-                  <h4 className='info-contact-item'>
-                    <i class="fa-solid fa-mobile-screen"></i>
+            <motion.div className="personnal-info"
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0, transition: { duration: 3 } }}
+            >
+
+              <div className='info-content'>
+                <p>
+                  Je suis un développeur web junior passionné par le développement web et l'apprentissage de nouvelles technologies. <br></br>
+                  Je suis un étudiant chez OpenClassRooms à la recherche d'une alternance en Bac+3 Python.
+                </p>
+                <div className='info-contact'>
+                  <p className='info-contact-item'>
+                    <i className="fa-solid fa-mobile-screen"></i>
                     0638481734
-                  </h4>
-                  <h4 className='info-contact-item'>
-                    <i class="fa-solid fa-envelope">
+                  </p>
+                  <p className='info-contact-item'>
+                    <i className="fa-solid fa-envelope">
                     </i>
                     <a href="mailto:edwin.d899@gmail.com"> edwin.d899@gmail.com </a>
-                  </h4>
-                  <h4 className='info-contact-item'>
-                    <i class="fa-solid fa-map-marker-alt"></i>
+                  </p>
+                  <p className='info-contact-item'>
+                    <i className="fa-solid fa-map-marker-alt"></i>
                     14 rue curiale, 75019 Paris
-                  </h4>
-                </ul>
-              </p>
-            </div>
+                  </p>
+                </div>
+              </div>
+            </motion.div>
             <h3 className='title-zone line-2'>
               Formations
             </h3>
             <div className="life-zone">
-              <h4 className='education-item'>
+              <motion.h4 className='education-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 4 } }}
+              >
+
                 OpenClassRooms Bac+2 développement web
-              </h4>
-              <p className="education-subtitle">
+              </motion.h4>
+              <motion.p className="education-subtitle"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 5 } }}
+              >
+
                 Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS ; <br></br>
                 Animer les pages web avec CSS3 ;<br></br>
                 Appliquer les standards du web et les normes en vigueur ;<br></br>
@@ -64,24 +78,36 @@ export default function Resume() {
                 Gérer les comptes utilisateurs ;<br></br>
                 Concevoir un site maintenable grâce à la gestion des erreurs et exceptions ;<br></br>
                 Créer, gérer et afficher le contenu d’une base de données.
-              </p>
-              <div className="educatioin"></div>
-              <h4 className='education-item'>
+              </motion.p>
+
+              <motion.h4 className='education-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 6 } }}>
+
                 Bac professionnel Système Electrique Numérique
-              </h4>
-              <p className="education-subtitle">
+              </motion.h4>
+              <motion.p className="education-subtitle"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 7 } }}
+              >
                 Installation d'équipements électrodomestiques, d'alarme, ;<br></br>
                 Maintenance d'équipements électrodomestiques;<br></br>
-              </p>
+              </motion.p>
 
-              <h4 className='education-item'>
+              <motion.h4 className='education-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 8 } }}
+              >
                 BEP Système Electrique Numérique option: Electrodomestique
-              </h4>
-              <p className="education-subtitle">
+              </motion.h4>
+              <motion.p className="education-subtitle"
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 9 } }}
+              >
                 Installation d'équipements électrodomestiques;<br></br>
                 Maintenance d'équipements électrodomestiques;<br></br>
 
-              </p>
+              </motion.p>
             </div>
           </div>
 
@@ -91,39 +117,55 @@ export default function Resume() {
             </h3>
 
             <div className='life-zone'>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 1.5 } }}>
                 Lindt & Sprüngli
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Vente de chocolat prenium.
               </p>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 2.5 } }}
+              >
                 Honor
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Vendeur de téléphone en pop-store.
               </p>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 3.5 } }}
+              >
                 French Toast & Co
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Vente de pâtisserie, pain perdu viennoiserie.
               </p>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 4.5 } }}>
                 Pret A Manger
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Encaissement des produits, préparation de produits chaud et de viennoiserie.
               </p>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 5.5 } }}
+              >
                 Café Pouchkine
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Vente de pâtisserie.
               </p>
-              <h4 className='experience-item'>
+              <motion.h4 className='experience-item'
+                initial={{ opacity: 0, x: -100 }}
+                animate={{ opacity: 1, x: 0, transition: { duration: 6.5 } }}
+              >
                 McDonald's
-              </h4>
+              </motion.h4>
               <p className='experience-subtitle'>
                 Encaissement des commandes, préparation des produits en cuisine.
               </p>
@@ -132,7 +174,6 @@ export default function Resume() {
         </div>
         <NavbarLeft />
       </div>
-
     </div>
   )
 }

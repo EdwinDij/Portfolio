@@ -12,11 +12,13 @@ export default function Home() {
         animate={{ y: 0 }}
         exit={{ height: 0, transition: {duration: 0.5}}}
         >
+
         <motion.div className='home-without-bg'
         initial={{ y: "-100vw" }}
         animate={{ y: 0 }}
         exit={{ opacity: 0, transition: {duration: 0.2}}}
         >
+
             <div className="me-content">
             <h1 className='name'>
                 Bonjour,<br></br> 
@@ -43,16 +45,19 @@ export default function Home() {
             <Nav />
             <div className="social">
                 <a className='social-link' href= "https://github.com/EdwinDij" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
                 </a>
                 <a className='social-link' href="https://twitter.com/Edwindijeont" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
                 </a>
                 <a className='social-link' href="https://www.linkedin.com/in/edwin-dijeont-1469a0226" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                 </a>
+         
             </div>
+
             </motion.div>
+
         </motion.div>
     )
 }

@@ -1,6 +1,11 @@
 @import '../../../colors.scss'; 
 
-.project-button {
+@media(max-width:768px) {
+  .content-projects {
+    width: fit-content;
+  }
+}
+/*.project-button {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -21,6 +26,7 @@
     background-color: $quaternary-color;
     color: black;
 }
+*/
 
 //animation des cards
 
@@ -37,6 +43,8 @@
     position: relative;
     text-align: center;
     width: 100%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 12px 2px $quinary-color;
   }
   
   .snip1576 * {
@@ -123,10 +131,23 @@
 .project-container {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  background-color: $tertiary-color;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  box-shadow: 7px 9px 12px 2px $primary-color;
 }
 
 .project-card{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+ gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project-card{
+    display: flex;
+    flex-direction: column;
+  }
+
 }

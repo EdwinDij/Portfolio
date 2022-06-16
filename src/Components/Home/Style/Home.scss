@@ -1,14 +1,20 @@
 @import '../../../colors.scss';
 
+
+.name, .me {
+    font-family: consolas, monospace;
+}
+
 .home {
     height: 100vh;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $primary-color;
-    color:#fff
+    background-image: url(../../../assets/background.jpg);
+    color:#fff;
 }
+
 
 .Typewriter {
     display: contents;

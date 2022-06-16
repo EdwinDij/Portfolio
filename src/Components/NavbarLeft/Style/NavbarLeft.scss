@@ -29,3 +29,13 @@
     writing-mode: vertical-lr;
 }
 
+.brand-style:hover {
+    color: $quaternary-color;
+    transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+    .navbar-left {
+        display: none;
+    }
+}
