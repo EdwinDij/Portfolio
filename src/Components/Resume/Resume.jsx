@@ -1,6 +1,6 @@
 import React from 'react'
 import './Style/Resume.scss'
-import CV from '../../assets/Edwin_DIJEONT_CV.pdf'
+import ButtonCv from '../ButtonCv/ButtonCv'
 import NavbarLeft from '../NavbarLeft/NavbarLeft'
 import Nav from '../Home/Nav'
 import { motion } from 'framer-motion'
@@ -171,7 +171,9 @@ export default function Resume() {
               </p>
             </div>
           </div>
+          <ButtonCv />
         </div>
+
         <NavbarLeft />
       </div>
     </div>
