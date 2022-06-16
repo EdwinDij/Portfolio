@@ -34,54 +34,50 @@ export default function Projects() {
   */}
         <div className='project-container'>
           <div className='project-card'>
-
+<a href="https://edwindij.github.io/version-avant-29-09-21-EdwinDijeont_2_31102021/" target="_blank" rel="noopener noreferrer">
               <figure className="snip1576" id="html">
                 <img src={Réservia} alt="Projet réservia" />
                 <figcaption>
                   <h3>Réservia <span>html-css</span></h3>
                 </figcaption>
-                <a href="https://edwindij.github.io/version-avant-29-09-21-EdwinDijeont_2_31102021/" target="_blank" rel="noopener noreferrer"></a>
               </figure>
+</a>
 
-
-
+<a href="https://edwindij.github.io/EdwinDijeont_3_26112021/" target="_blank" rel="noopener noreferrer">
               <figure className="snip1576" id="html">
                 <img src={Ohmyfood} alt="Projet Ohmyfood" />
                 <figcaption>
                   <h3>OHmyfood <span>html-css</span></h3>
                 </figcaption>
-                <a href="https://edwindij.github.io/EdwinDijeont_3_26112021/" target="_blank" rel="noopener noreferrer"></a>
               </figure>
-            
+               </a>
 
-
+              <a href="https://github.com/EdwinDij/EdwinDijeont_5_13022022-/tree/master/Kanap" target="_blank" rel="noopener noreferrer">
               <figure className="snip1576" id="html">
                 <img src={Kanap} alt="Projet Kanap" />
                 <figcaption>
                   <h3>Kanap <span>Javascript</span></h3>
                 </figcaption>
-                <a href="https://github.com/EdwinDij/EdwinDijeont_5_13022022-/tree/master/Kanap" target="_blank" rel="noopener noreferrer"></a>
               </figure>
+              </a>
 
-
-
+<a href="https://github.com/EdwinDij/EdwinDij-EdwinDijeont_6_03032022--" target="_blank" rel="noopener noreferrer">
               <figure className="snip1576" id="html">
                 <img src={Piiquante} alt="Projet Piiquante" />
                 <figcaption>
                   <h3>Piquante <span>Node.js - MongoDB</span></h3>
                 </figcaption>
-                <a href="https://github.com/EdwinDij/EdwinDij-EdwinDijeont_6_03032022--" target="_blank" rel="noopener noreferrer"></a>
               </figure>
-    
+    </a>
 
-
+<a href="https://github.com/EdwinDij/groupomania" target="_blank" rel="noopener noreferrer">
               <figure className="snip1576" id="html">
                 <img src={Groupomania} alt="Projet groupomania" />
                 <figcaption>
                   <h3>Groupomania <span>ReactJs - Node.js - Mysql</span></h3>
                 </figcaption>
-                <a href="https://github.com/EdwinDij/groupomania" target="_blank" rel="noopener noreferrer"></a>
               </figure>
+              </a>
 
 
           </div>
